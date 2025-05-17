@@ -1,39 +1,38 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// Animate the "Experiences" scroll text
-gsap.to("#experience-text", {
-  x: "-160%",
+// Animate scroll heading horizontally
+gsap.to(".scroll-heading", {
+  x: "-100%",
   scrollTrigger: {
-    trigger: "#page2",
+    trigger: ".scroll-section",
     start: "top top",
     end: "bottom top",
-    scrub: 1.5,
+    scrub: 1,
     pin: true,
   },
 });
 
-// Animate the circle in page2
-gsap.from(".circle", {
-  scale: 0,
+// Showcase image parallax
+gsap.from(".showcase-img", {
+  y: 100,
+  scale: 1.2,
   opacity: 0,
   scrollTrigger: {
-    trigger: "#page2",
-    start: "top center",
-    end: "top 100px",
+    trigger: ".showcase-img",
+    start: "top 90%",
+    end: "top 40%",
     scrub: true,
   },
 });
 
-// Parallax effect on image in page3
-gsap.from(".parallax-img", {
-  y: 100,
-  scale: 1.2,
+// Final text fade in
+gsap.from(".final-text", {
   opacity: 0,
-  duration: 2,
+  y: 50,
+  duration: 1,
   scrollTrigger: {
-    trigger: "#page3",
+    trigger: ".final-text",
     start: "top 80%",
-    end: "top 30%",
-    scrub: true,
+    toggleActions: "play none none none",
   },
 });
