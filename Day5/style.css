@@ -39,7 +39,21 @@ body {
 }
 
 h1 {
+    font-family: 'Bungee', cursive;
+font-weight: 100000;
+  font-size: 70px;
   color: white;
+  margin-top:50px;
+  margin-left:50px;
+  letter-spacing: px;
+
+  background-image: url(https://images.pexels.com/photos/3925875/pexels-photo-3925875.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;   
+
 }
 
 #main {
@@ -53,6 +67,9 @@ h1 {
 }
 
 #main i {
+    position: absolute;
+    top: 50px;
+    right: 50px;
   font-size: 30px;
   color: white;
 }
@@ -105,3 +122,5 @@ h4:hover {
   font-size: 3vw;
   color: white;
 }
+
+

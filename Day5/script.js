@@ -44,6 +44,8 @@ stop.addEventListener("click", () => {
 
 full.addEventListener("mouseenter", () => {
   text.style.fontSize = "4px";
+
+
   gsap.to(curser, {
     scale: 4,
     ease: "back.out",
@@ -56,6 +58,8 @@ full.addEventListener("mouseenter", () => {
 
 full.addEventListener("mouseleave", () => {
   text.style.display = "none";
+
+
   gsap.to(curser, {
     scale: 1,
     ease: "back.out",
@@ -63,3 +67,10 @@ full.addEventListener("mouseleave", () => {
     zIndex: 100,
   });
 });
+
+
+gsap.from("h1", {
+  y: 50,
+  opacity: 0,
+  duration: 2,
+}); 
